@@ -1,0 +1,48 @@
+2026-04-02 12:47:11.357411+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT @[*]@character_set_database, @@sql_mode"; expected "identifier"; SQL statement:
+SELECT @@character_set_database, @@sql_mode [42001-240]
+2026-04-02 12:47:12.876313+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table employees (id bigint not null, email varchar(255) not null, name varchar(255) not null, phone_no bigint not null, primary key (id)) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+create table employees (id bigint not null, email varchar(255) not null, name varchar(255) not null, phone_no bigint not null, primary key (id)) engine=InnoDB [42001-240]
+2026-04-02 12:47:12.890675+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table employees_seq (next_val bigint) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+create table employees_seq (next_val bigint) engine=InnoDB [42001-240]
+2026-04-02 12:47:12.893666+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEES_SEQ" not found (this database is empty); SQL statement:
+insert into employees_seq ( next_val ) values ( 1 ) [42104-240]
+2026-04-02 12:47:12.896907+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255) not null, name varchar(255) not null, phone_no bigint, primary key (id)) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255) not null, name varchar(255) not null, phone_no bigint, primary key (id)) engine=InnoDB [42001-240]
+2026-04-02 12:47:12.898969+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student_seq (next_val bigint) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+create table student_seq (next_val bigint) engine=InnoDB [42001-240]
+2026-04-02 12:47:12.902055+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT_SEQ" not found (this database is empty); SQL statement:
+insert into student_seq ( next_val ) values ( 1 ) [42104-240]
+2026-04-02 12:47:48.046762+05:30 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT_SEQ" not found (this database is empty); SQL statement:
+select next_val as id_val from student_seq for update [42104-240]
+2026-04-02 12:49:11.881542+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT @[*]@character_set_database, @@sql_mode"; expected "identifier"; SQL statement:
+SELECT @@character_set_database, @@sql_mode [42001-240]
+2026-04-02 12:49:11.939897+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table employees (id bigint not null, phone_no bigint not null, email varchar(255) not null, name varchar(255) not null, primary key (id)) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+create table employees (id bigint not null, phone_no bigint not null, email varchar(255) not null, name varchar(255) not null, primary key (id)) engine=InnoDB [42001-240]
+2026-04-02 12:49:11.942301+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table employees_seq (next_val bigint) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+create table employees_seq (next_val bigint) engine=InnoDB [42001-240]
+2026-04-02 12:49:11.944296+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEES_SEQ" not found (this database is empty); SQL statement:
+insert into employees_seq ( next_val ) values ( 1 ) [42104-240]
+2026-04-02 12:49:11.947289+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, phone_no bigint, email varchar(255) not null, name varchar(255) not null, primary key (id)) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+create table student (id bigint not null, phone_no bigint, email varchar(255) not null, name varchar(255) not null, primary key (id)) engine=InnoDB [42001-240]
+2026-04-02 12:49:11.949283+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student_seq (next_val bigint) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+create table student_seq (next_val bigint) engine=InnoDB [42001-240]
+2026-04-02 12:49:11.951485+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT_SEQ" not found (this database is empty); SQL statement:
+insert into student_seq ( next_val ) values ( 1 ) [42104-240]
+2026-04-02 12:49:23.937808+05:30 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT_SEQ" not found (this database is empty); SQL statement:
+select next_val as id_val from student_seq for update [42104-240]
